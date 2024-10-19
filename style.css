@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+
+body {
+	font-family: "Playwrite DE Grund", serif;
+	font-optical-sizing: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f2f4;
+	color: #333;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+	border-radius: 1rem 1rem 0 0;
+	background-image: linear-gradient(30deg, #fcb86d, white, #fcb86d);
+	color: #890012;
+	text-align: center;
+	position: relative;
+	display: flex;
+}
+header img {
+	width: 100px;
+	height: 100px;
+	margin-right: 30px;
+	border-radius: 1rem 0 0 0;
+}
+.header-text {
+	margin-top: 5px;
+	text-align: left;
+}
+h1 {
+	margin: 0;
+	font-size: 1.8em;
+}
+.subheader {
+	font-style: italic;
+	color: black;
+	margin: 0;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.subheader span {
+	text-shadow: 2px 2px 2px #800000;
+}
+.content {
+	background-color: white;
+	padding: 30px;
+	border-radius: 0 0 1rem 1rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mission,
+.tickets,
+.speakers {
+	margin-bottom: 40px;
+}
+h2 {
+	color: #8b0000;
+	border-bottom: 2px solid #8b0000;
+	padding-bottom: 10px;
+	font-size: 1.5em;
+}
+.quote {
+	font-style: italic;
+	margin: 20px 0;
+	padding: 15px;
+	background-color: #f0f0f0;
+	border-left: 4px solid #8b0000;
+	font-size: 0.95em;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+li {
+	margin-bottom: 15px;
+	font-size: 0.95em;
+}
+.speaker {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	background-color: #f9f2f4;
+	padding: 20px;
+	border-radius: 5px;
+	transition: transform 0.2s ease-in-out;
+}
+.speaker:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.speaker img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 25px;
+	border: 3px solid #8b0000;
+}
+.speaker-info {
+	flex-grow: 1;
+}
+.speaker-info strong {
+	color: #8b0000;
+	font-size: 1.1em;
+	display: block;
+	margin-bottom: 5px;
+}
+.speaker-info p {
+	margin: 0;
+	font-size: 0.95em;
+}
+footer {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+	font-size: 0.8em;
+	color: #666;
+}
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+	header img {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.header-text {
+		text-align: center;
+	}
+	.speaker {
+		flex-direction: column;
+		text-align: center;
+	}
+	.speaker img {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+}
